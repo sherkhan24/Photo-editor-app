@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>about:blank
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container start  -->
+       <div class="container disabled" >
+         <BUtton class="btnn">SAVE</BUtton>
+          <h1>Photo Editor</h1>
+          <div class="viewImg">
+            <img src="./assets/Jerry.jpg" alt="">
+          </div>
+
+          <div class="upload">
+            <input type="file" accept="image/*" hidden  >
+            <button>Upload Image</button>
+          </div>
+
+                <!-- slider start  -->
+          <div class="slider">
+            <div class="sliderData"><span id="filterName">brightness</span><span id="rangeVal" >0</span>
+            </div>
+
+            <input type="range" min="0" max="100" value="0"> 
+            <!-- slider End  -->
+          </div>
+               
+              <!-- filterSection start  -->
+            <div class="filterSection">
+
+              <p>Filters</p>
+              <!-- filterButton start  -->
+              <div class="filterButton">
+                <button id="brightness" title="bright" class="active">
+                  <img width="20px" height="20px" src="./assets/icons8-brightness-80.png" alt="">
+                </button>
+
+                <button id="blur" title="blur">
+                  <img width="20px" height="20px" src="./assets/blur.png" alt="">
+                </button>
+
+                <button id="invert" title="invert">
+                  <img width="20px" height="20px" src="./assets/saturation.png" alt="">
+                </button>
+
+                <button id="saturate" title="saturate">
+                  <img width="20px" height="20px" src="./assets/blur.png" alt="">
+                </button>
+
+                <button id="contrast" title="contrast">
+                  <img width="20px" height="20px" src="./assets/blur.png" alt="">
+                </button>
+
+
+              </div>
+             <!-- filterButton End  -->
+                
+            </div>
+              <!-- filterSection start  -->
+          
+       </div>
+    <!-- container end  -->
+
+  
+
+    <script src="./script.js"></script>
+</body>
+</html>
